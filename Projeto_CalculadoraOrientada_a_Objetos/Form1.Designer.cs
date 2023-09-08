@@ -38,7 +38,7 @@
             // txtN2
             // 
             this.txtN2.Location = new System.Drawing.Point(225, 40);
-            this.txtN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtN2.Margin = new System.Windows.Forms.Padding(2);
             this.txtN2.Name = "txtN2";
             this.txtN2.Size = new System.Drawing.Size(99, 20);
             this.txtN2.TabIndex = 0;
@@ -46,7 +46,7 @@
             // txtN1
             // 
             this.txtN1.Location = new System.Drawing.Point(19, 38);
-            this.txtN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtN1.Margin = new System.Windows.Forms.Padding(2);
             this.txtN1.Name = "txtN1";
             this.txtN1.Size = new System.Drawing.Size(93, 20);
             this.txtN1.TabIndex = 1;
@@ -61,9 +61,11 @@
             "Multiplicar",
             "Potenciação",
             "Dividir 1",
-            "Dividir 2"});
+            "Dividir 2",
+            "Comparar",
+            "Par_Impar"});
             this.cmbOperacao.Location = new System.Drawing.Point(114, 38);
-            this.cmbOperacao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbOperacao.Margin = new System.Windows.Forms.Padding(2);
             this.cmbOperacao.Name = "cmbOperacao";
             this.cmbOperacao.Size = new System.Drawing.Size(109, 21);
             this.cmbOperacao.TabIndex = 3;
@@ -101,10 +103,9 @@
             this.Controls.Add(this.cmbOperacao);
             this.Controls.Add(this.txtN1);
             this.Controls.Add(this.txtN2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Calculando...";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,7 +28,7 @@ namespace Projeto_CalculadoraOrientada_a_Objetos
                 case "Somar":
                     {
                         //INSTANCIANDO A CLASSE
-                        CalculadoraBásica objCalc = new CalculadoraBásica();
+                        CalcCientifica objCalc = new CalcCientifica();
                         objCalc.Num1 = a;
                         objCalc.Num2 = b;
                         objCalc.Soma();
@@ -38,7 +38,7 @@ namespace Projeto_CalculadoraOrientada_a_Objetos
                 case "Subtrair":
                     {
                         //INSTANCIANDO A CLASSE
-                        CalculadoraBásica objCalc = new CalculadoraBásica();
+                        CalcCientifica objCalc = new CalcCientifica();
                         objCalc.Num1 = a;
                         objCalc.Num2 = b;
                         lblResultado.Text = objCalc.Subtrair();
@@ -46,20 +46,41 @@ namespace Projeto_CalculadoraOrientada_a_Objetos
                     }
                 case "Multiplicar":
                     {
-                        CalculadoraBásica objCalc = new CalculadoraBásica();
+                        CalcCientifica objCalc = new CalcCientifica();
+                        objCalc.Num1 = a;
+                        objCalc.Num2 = b;
                         lblResultado.Text = objCalc.Multiplicar().ToString();
-                      //lblResultado.Text = objCalc.Multiplicar(a, b);
-
+                        //lblResultado.Text = objCalc.Multiplicar(a, b);
+                        break;
+                    }
+                case "Potenciação":
+                    {
+                        CalcCientifica objCalc = new CalcCientifica();
+                        objCalc.Num1 = a;
+                        objCalc.Num2 = b;
+                        lblResultado.Text = objCalc.Potenciacao();
+                        //lblResultado.Text = objCalc.Potenciacao(a, b);
+                        break;
+                    }
+                case "Comparar":
+                    {
+                        CalcCientifica objCalc = new CalcCientifica();
+                        //objCalc.Num1 = a;
+                        //objCalc.Num2 = b;
+                        lblResultado.Text = objCalc.Comparar(a, b);
+                        break;
+                    }
+                case "Par_Impar":
+                    {
+                        CalcCientifica objCalc = new CalcCientifica();
+                        objCalc.Num1 = a;
+                        objCalc.Num2 = b;
+                        lblResultado.Text = objCalc.Par_Impar();
                         break;
                     }
                 default:
                     break;
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
